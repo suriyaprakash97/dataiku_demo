@@ -1,0 +1,230 @@
+{
+  "type": "S3",
+  "managed": true,
+  "featureGroup": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": true,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "escape_only_no_quote",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "arrayItemSeparator": "\u0002",
+    "mapKeySeparator": "\u0003",
+    "dateSerializationFormat": "HIVE",
+    "arrayMapFormat": "hive",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "roses69024@unitsade.com"
+    },
+    "lastModifiedOn": 1708692744908,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "bucket": "gis-data-ap-southeast-1",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_data_offering_sync",
+    "connection": "dataiku-managed-storage",
+    "path": "/managed-dss-data/${projectKey}/data_offering_sync",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"assetId","type":"string"},
+      {"name":"entityTermType","type":"string"},
+      {"name":"exact_match","type":"string"},
+      {"name":"exact_matched_terms","type":"string"},
+      {"name":"matched_terms","type":"string"},
+      {"name":"hops","type":"string"},
+      {"name":"recommendation","type":"string"},
+      {"name":"recommendation_length","type":"string"},
+      {"name":"objectType","type":"string"},
+      {"name":"dataSet","type":"string"},
+      {"name":"dataSource","type":"string"},
+      {"name":"description","type":"string"},
+      {"name":"dataOffering","type":"string"},
+      {"name":"dataVendor","type":"string"},
+      {"name":"useCase","type":"string"},
+      {"name":"dataDomain","type":"string"},
+      {"name":"country","type":"string"},
+      {"name":"useCaseCategory","type":"string"},
+      {"name":"dataVendorHashId","type":"string"},
+      {"name":"dataAttributes","type":"string"},
+      {"name":"dataVendorList","type":"string"},
+      {"name":"dataOfferingFilter","type":"string"},
+      {"name":"dataVendorFilter","type":"string"},
+      {"name":"useCaseFilter","type":"string"},
+      {"name":"dataSetFilter","type":"string"},
+      {"name":"useCaseHierarchy","type":"string"},
+      {"name":"dataDomainFilter","type":"string"},
+      {"name":"brand","type":"string"},
+      {"name":"brandFilter","type":"string"},
+      {"name":"dataSubject","type":"string"},
+      {"name":"dataSubjectFilter","type":"string"},
+      {"name":"useCaseCategoryFilter","type":"string"},
+      {"name":"dataId","type":"string"},
+      {"name":"dataIdFilter","type":"string"},
+      {"name":"countryFilter","type":"string"},
+      {"name":"website","type":"string"},
+      {"name":"contactName","type":"string"},
+      {"name":"contactEmail","type":"string"},
+      {"name":"hqLocation","type":"string"},
+      {"name":"hqLocationFilter","type":"string"},
+      {"name":"keyIndustriesServed","type":"string"},
+      {"name":"keyIndustriesServedFilter","type":"string"},
+      {"name":"ownership","type":"string"},
+      {"name":"ownershipFilter","type":"string"},
+      {"name":"founded","type":"string"},
+      {"name":"foundedFilter","type":"string"},
+      {"name":"maturityOfPartnership","type":"string"},
+      {"name":"maturityOfPartnershipFilter","type":"string"},
+      {"name":"typeOfData","type":"string"},
+      {"name":"typeOfDataFilter","type":"string"},
+      {"name":"useCasecategory","type":"string"},
+      {"name":"useCaseHierarchyFilter","type":"string"},
+      {"name":"id","type":"string"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

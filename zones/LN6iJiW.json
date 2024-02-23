@@ -5,6 +5,14 @@
     {
       "objectId": "data_offering_new",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_data_offering_sync",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "data_offering_sync",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
