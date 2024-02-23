@@ -105,7 +105,7 @@
       {"name":"useCase","type":"string"},
       {"name":"dataDomain","type":"string"},
       {"name":"country","type":"string"},
-      {"name":"useCaseCategory","type":"string"},
+      {"name":"useCaseCategorySample","type":"string"},
       {"name":"dataVendorHashId","type":"string"},
       {"name":"dataAttributes","type":"string"},
       {"name":"dataVendorList","type":"string"},
