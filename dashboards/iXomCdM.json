@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "id": "FWpxjP3",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false,
+      "enableCrossFilters": true
+    }
+  ],
+  "owner": "roses69024@unitsade.com",
+  "listed": true,
+  "name": "demofolder\u0027s default dashboard",
+  "showGrid": true,
+  "reloadWhenEventReceived": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "roses69024@unitsade.com"
+    },
+    "lastModifiedOn": 1708690480663,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
