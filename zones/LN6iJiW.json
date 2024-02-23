@@ -1,7 +1,12 @@
 {
   "name": "Input",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "data_offering_new",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
