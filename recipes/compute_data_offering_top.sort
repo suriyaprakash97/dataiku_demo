@@ -42,8 +42,15 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "entityTermType",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "useCaseCategory": "useCaseCategorySample"
+  },
   "computedColumns": []
 }
