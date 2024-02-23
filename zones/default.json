@@ -2,7 +2,12 @@
   "name": "Processing",
   "color": "#D1D8DA",
   "items": [],
-  "shared": [],
+  "shared": [
+    {
+      "objectId": "data_offering_prepared",
+      "objectType": "DATASET"
+    }
+  ],
   "tags": [],
   "customFields": {},
   "checklists": {
