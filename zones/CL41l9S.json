@@ -1,7 +1,16 @@
 {
   "name": "Output",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "data_offering_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_data_offering_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
